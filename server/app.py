@@ -1,6 +1,6 @@
 import pickle as pkl
 import os
-import pandas as pd
+import numpy as np
 from flask import Flask, request, jsonify
 from flask_cors import CORS
 
@@ -16,7 +16,7 @@ with open(file_path, 'rb') as f:
     model = pkl.load(f)
 
 def predict(Pregnancies, Glucose, BloodPressure, SkinThickness, Insulin, Bmi, Dpf, Age):
-    input_data = pd.DataFrame([[Pregnancies, Glucose, BloodPressure, SkinThickness, Insulin, Bmi, Dpf, Age]])
+    input_data = np.array([[Pregnancies, Glucose, BloodPressure, SkinThickness, Insulin, Bmi, Dpf, Age]])
     input_data = scaler.transform(input_data)
     prediction = model.predict(input_data)
     
