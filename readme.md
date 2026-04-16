@@ -4,7 +4,6 @@
 
 Welcome to our Diabetes Prediction Website! Our platform offers a unique opportunity for users to gain insights into their potential risk of developing diabetes by leveraging predictive analytics and visualization techniques.
 
-
 <div>
   <img src="https://github.com/user-attachments/assets/b2e5bbb6-8f9b-4dba-9a23-9ca77a3553ba" alt="Diabetes Prediction Website">
 </div>
